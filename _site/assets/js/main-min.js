@@ -1,0 +1,1 @@
+$(document).ready(function(){$("*").scrollTop()>420?($(".header--sticky").attr("style","visibility: visible"),$(".is-scrolling").attr("style","visibility: visible")):($(".header--sticky").attr("style","visibility: hidden"),$(".is-scrolling").attr("style","visibility: hidden"))});
