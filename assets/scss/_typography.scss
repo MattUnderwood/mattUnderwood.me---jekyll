@@ -84,3 +84,16 @@ a {
 #contact, #contact-me {
     font-size: 1.1rem;
 }
+
+// CSS FOR BLOG PAGE
+#blog-posts {
+    flex: 100%;
+    padding-bottom: 1rem;
+    &:before {
+        content: "";
+        padding: 0 .25rem;
+        background: $link;
+        margin-right: .5rem;
+    }
+}
+

@@ -2,20 +2,31 @@
 layout: default
 title: Blog
 ---
-<div class="container row">
-  <h2 class="spacing">Blog</h2>
 
-  <div class="blog-posts">
+<div class="blog-background">
+  <div class="my-blog row">
+    <h1 class="my-blog__headline">My Blog</h1>
+    <p class="my-blog__description">
+      This blog contains information about myself, my projects, and other topics related to web development, design, marketing, and blockchain technology.
+    </p>
+  </div>
+</div>
+
+<div class="row padding">
+
+  <div class="">
     {% for post in site.posts %}
       <div class="blog-post spacing">
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        <p class="summary">
+        <h3 id="blog-posts"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p class="summary blog__container">
           {{ post.category }}
           <span class="date">
             {{ post.date | date: '%B %d, %Y' }}
           </span>
         </p>
-        {{ post.excerpt }}
+        <div class="blog__container">
+          {{ post.excerpt }}
+        </div>
       </div>
     {% endfor %}
   </div>

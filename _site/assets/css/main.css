@@ -113,6 +113,15 @@ a {
 #contact, #contact-me {
   font-size: 1.1rem; }
 
+#blog-posts {
+  flex: 100%;
+  padding-bottom: 1rem; }
+  #blog-posts:before {
+    content: "";
+    padding: 0 .25rem;
+    background: #E87345;
+    margin-right: .5rem; }
+
 .container, .container--flex, .row, .container--flex0 {
   margin: 0 auto; }
   .container--flex, .row {
@@ -395,7 +404,8 @@ label {
   margin-bottom: 0; }
 
 .blog__container {
-  margin-left: 1rem; }
+  margin: 0 1rem;
+  margin-top: 0; }
 .blog__article-title {
   margin-top: 2rem; }
   .blog__article-title:first-child {
@@ -446,12 +456,22 @@ label {
     .footer-list__item:last-child:after {
       content: none; }
 
+@media only screen and (min-width: 320px) {
+  .row {
+    margin-left: 1rem;
+    margin-right: 1rem; } }
+@media only screen and (min-width: 360px) {
+  .row {
+    margin-left: 1rem;
+    margin-right: 1rem; } }
 @media only screen and (min-width: 768px) {
   .row {
-    margin-left: 1rem; } }
+    margin-left: 1rem;
+    margin-right: 1rem; } }
 @media only screen and (min-width: 1024px) {
   .row {
-    margin-left: 2rem; } }
+    margin-left: 2rem;
+    margin-right: 2rem; } }
 
 @media only screen and (min-width: 320px) {
   .padding {
@@ -465,5 +485,67 @@ label {
   .padding {
     padding-top: 4rem;
     padding-bottom: 4rem; } }
+
+@media only screen and (min-width: 360px) {
+  .blog-background {
+    background: url(../images/blog-section-background.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    width: 100%;
+    height: 70vh;
+    padding: 2rem 1rem;
+    margin-top: -70px;
+    display: flex;
+    align-items: center;
+    /* align vertical  */
+    justify-content: left; } }
+@media only screen and (min-width: 768px) {
+  .blog-background {
+    background: url(../images/blog-section-background.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    width: 100%;
+    height: 80vh;
+    padding: 2rem 1rem;
+    margin-top: -70px;
+    display: flex;
+    align-items: center;
+    /* align vertical  */
+    justify-content: left; } }
+
+.my-blog {
+  max-width: 60%;
+  margin-top: 70px;
+  margin-bottom: 35px; }
+  .my-blog__headline {
+    margin-bottom: 1.5rem; }
+    @media only screen and (min-width: 320px) {
+      .my-blog__headline {
+        font-size: 1.25rem; } }
+    @media only screen and (min-width: 360px) {
+      .my-blog__headline {
+        font-size: 1.5rem; } }
+    @media only screen and (min-width: 768px) {
+      .my-blog__headline {
+        font-size: 1.75rem; } }
+    @media only screen and (min-width: 1024px) {
+      .my-blog__headline {
+        font-size: 3rem; } }
+  @media only screen and (min-width: 320px) {
+    .my-blog__description {
+      font-size: 1rem; } }
+  @media only screen and (min-width: 360px) {
+    .my-blog__description {
+      font-size: 1.2rem; } }
+  @media only screen and (min-width: 768px) {
+    .my-blog__description {
+      font-size: 1.3rem; } }
+  @media only screen and (min-width: 1024px) {
+    .my-blog__description {
+      font-size: 1.4rem; } }
 
 /*# sourceMappingURL=main.css.map */

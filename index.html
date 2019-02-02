@@ -49,8 +49,8 @@ title: Matt Underwood
 
         <section id="blog">
             <div class="row padding">
-                <div class="blog blog__container">
-                    <h2 class="title-flex"><a class="decoration" id="blog-title" href="/blog">Blog</a></h2>
+                <h2 class="title-flex"><a class="decoration" id="blog-title" href="/blog">Blog</a></h2>
+                    <div class="blog blog__container">
                         <ul>
                             {% for post in site.posts offset: 0 limit: 3%}
                             <li class="post">
@@ -58,7 +58,7 @@ title: Matt Underwood
                             </li>
                             {% endfor %}
                         </ul>
-                </div>
+                    </div>
             </div>
         </section>
     </div>

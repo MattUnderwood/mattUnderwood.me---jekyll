@@ -69,17 +69,8 @@
             }
         }
     }
-    // @media #{$sml} {
-    //     &__headline {
-    //         font-size: 1.75rem;
-    //     }
-    //     &__description {
-    //         font-size: 1.1rem;
-    //     }
-    // }
 
-
-// ******* NEW CODE FOR NAVBAR - THIS NEEDS TO BE ORGANIZED FOR SCSS ********
+// ******* NEW CODE FOR NAVBAR - THIS NEEDS TO BE ORGANIZED FOR SCSS and BEM ********
 
 /* Navigation */
 .nav {
@@ -326,7 +317,8 @@ label {
 
 .blog {
     &__container {
-        margin-left: 1rem;
+        margin: 0 1rem;
+        margin-top: 0;
     }
     &__article-title {
         margin-top: 2rem;
@@ -364,12 +356,6 @@ label {
         font-size: 1.5rem;
         color: white;
         transition: all .25s ease-in-out;
-
-
-
-
-
-
         &:hover {color: $link;}
     }
 }
@@ -399,15 +385,25 @@ label {
 
 // make all rows have the same margin left
 .row {
+    @media #{$xsml}{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    @media #{$small}{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
     @media #{$med}{
         margin-left: 1rem;
+        margin-right: 1rem;
     }
     @media #{$lrg}{
         margin-left: 2rem;
+        margin-right: 2rem;
     }
 }
 
-// add top padding to sections
+// add top and bottom padding to sections
 .padding {
     @media #{$xsml}{
         padding-top: 2rem;
@@ -422,4 +418,74 @@ label {
         padding-bottom: 4rem;
     }
 }
+
+// BLOG PAGE CSS
+
+.blog-background {
+    @media #{$small} {
+        background: url(../images/blog-section-background.jpg);
+        background-size: cover;
+        background-position: bottom;        
+        background-repeat: no-repeat;
+        margin-bottom: 0;
+        width: 100%;
+        height: 70vh;  // calc(100vh - 70px); if I remove the margin-top below
+        padding: 2rem 1rem;
+        margin-top: -70px;
+        display: flex;
+        align-items: center; /* align vertical  */
+        justify-content: left;
+    }
+    @media #{$med} {
+        background: url(../images/blog-section-background.jpg);
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        margin-bottom: 0;
+        width: 100%;
+        height: 80vh;  // calc(100vh - 70px); if I remove the margin-top below
+        padding: 2rem 1rem;
+        margin-top: -70px;
+        display: flex;
+        align-items: center; /* align vertical  */
+        justify-content: left;
+    }
+}
+
+.my-blog {
+    max-width: 60%;
+    margin-top: 70px;
+    margin-bottom: 35px;
+
+        &__headline {
+            margin-bottom: 1.5rem;
+
+            @media #{$xsml} {
+                font-size: 1.25rem;
+            }
+            @media #{$small} {
+                font-size: 1.5rem;
+            }
+            @media #{$med} {
+                font-size: 1.75rem;
+            }
+            @media #{$lrg} {
+            font-size: 3rem;
+            }
+        }
+        &__description {
+            @media #{$xsml} {
+                font-size: 1rem;
+            }
+            @media #{$small} {
+                font-size: 1.2rem;
+            }
+            @media #{$med} {
+                font-size: 1.3rem;
+            }
+            @media #{$lrg} {
+            font-size: 1.4rem;
+            }
+        }
+    }
 
