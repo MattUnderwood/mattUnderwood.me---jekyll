@@ -14,48 +14,192 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+    width: 100%;
+	height: 100vh;  // calc(100vh - 70px); if I remove the margin-top below
     padding: 2rem 1rem;
-
-    @media #{$med} {
-        padding: 0 1rem 8rem;
-    }
+    margin-top: -70px;
+    display: flex;
+    align-items: center; /* align vertical */
+    justify-content: center;
+    // @media #{$med} {
+    //     padding: 0 1rem 8rem;
+    // }
 }
 
-.header {
-    &__container {}
-    &__title {display: none}
-    &__button{}
+.hero {
+    @media #{$xsml} {
+        max-width: 90%;
+    }
+    @media #{$small} {
+        max-width: 85%;
+    }
+    @media #{$lrg} {
+    max-width: 65%;
+    }
+    margin-bottom: 35px;
+        &__headline {
+            margin-bottom: 1.5rem;
 
-    @media #{$med} {
-        &__container{
-            display: flex;
-            justify-content: flex-end;
-            padding: 2rem 1rem 3rem;
+            @media #{$xsml} {
+                font-size: 1.25rem;
+            }
+            @media #{$small} {
+                font-size: 1.5rem;
+            }
+            @media #{$med} {
+                font-size: 1.75rem;
+            }
+            @media #{$lrg} {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            }
+        }
+        &__description {
+            @media #{$xsml} {
+                font-size: 1rem;
+            }
+            @media #{$small} {
+                font-size: 1.2rem;
+            }
+            @media #{$med} {
+                font-size: 1.3rem;
+            }
+            @media #{$lrg} {
+            font-size: 1.4rem;
+            }
         }
     }
+    // @media #{$sml} {
+    //     &__headline {
+    //         font-size: 1.75rem;
+    //     }
+    //     &__description {
+    //         font-size: 1.1rem;
+    //     }
+    // }
 
-    &--sticky {
-        position: fixed;
-        top: 0;
-        left: 0;
+
+// ******* NEW CODE FOR NAVBAR - THIS NEEDS TO BE ORGANIZED FOR SCSS ********
+
+/* Navigation */
+.nav {
+    font-family: 'Montserrat', sans-serif;    
+    font-weight: 400;
+    border-bottom: 1px solid #EAEAEB;
+    text-align: right;
+    line-height: 70px;
+    height: auto;
+    min-height: 70px;
+    background-color: white;
+    overflow: hidden;
+    padding-right: 50px;
+    // margin: 0px 20px 20px 20px;
+    transition: top 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    // shadow for bottom of nav bar
+    -webkit-box-shadow: 0 8px 6px -7px gray;
+	-moz-box-shadow: 0 8px 6px -7px gray;
+	box-shadow: 0 8px 6px -7px gray;
+}
+
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.nav + .wrapper {
+    padding-top: 70px;
+  }
+
+#menu a {
+    clear: right;
+    text-decoration: none;
+    color: var(--dark);
+    line-height: 70px;
+} 
+
+/* Change navbar link background color, color, and font-weight when hovered over - also works in hamburger view */
+
+#menu a:hover {
+    background: #efefef;
+    color: black;
+    font-weight: 500;
+}
+
+/* Hamburger Menu */
+label {
+    margin-right: 40px;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+#toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 815px) {
+    label {
+        display: block;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    .menu {
+        text-align: center;
         width: 100%;
+        display: none;
+    }
+    #menu a {
+        display: block;
+        border: 1px solid #EAEAEB;
+        margin: 0;
+    }
 
-        background: white;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    #mattUnderwood {
+        font-size: 20px;
+        font-weight: 700;
+        float: left;
+        margin-left: 2%;
+        text-decoration: none;
+        color: var(--dark);
+        line-height: 70px;
+    }
 
-        .header {
-            &__container {
-                padding: 1rem;
-                justify-content: space-between;
-                align-items: center;
-            }
-            &__title {display: block}
-            &__button {
-                box-shadow: none;
-            }
-        }
+    #toggle:checked + .menu {
+        display: block;
     }
 }
+
+@media only screen and (min-width: 815px) {
+    #mattUnderwood {
+        font-size: 22px;
+        font-weight: 700;
+        float: left;
+        margin-left: 2%;
+        text-decoration: none;
+        color: var(--dark);
+        line-height: 70px;
+    }
+
+    #menu a {
+        display: inline-block;
+        padding: 0 10px 0 10px;
+    }
+}
+
+@media only screen and (min-width: 751px) and (max-width: 800px) {
+    .nav {
+        padding-right: 20px;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .nav {
+        padding-right: 0px;
+    }
+}
+
+// ******* END OF NEW CODE FOR NAVBAR - THIS NEEDS TO BE ORGANIZED FOR SCSS ********
 
 #contact-me {
     padding: 1rem 0;
@@ -74,41 +218,23 @@
 
 }
 
-.is-scrolling {
-    margin-top: 8.5rem;
+//  .portfolio {
+//     margin: 0;
+//     margin-right: 0;
 
-    .header-background {
-        background-position: bottom;
-    }
-}
-
-.hero {
-    background-size: 100%;
-    background-position: center;
-    padding: 2rem 1.5rem;
-    &__headline {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
-}
-
- .portfolio {
-    margin: 0;
-    margin-right: 0;
-
-    @media #{$xsml}{
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
-    @media #{$med}{
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
-    @media #{$lrg}{
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-    }
-}
+//     @media #{$xsml}{
+//         padding-top: 2rem;
+//         padding-bottom: 2rem;
+//     }
+//     @media #{$med}{
+//         padding-top: 2rem;
+//         padding-bottom: 2rem;
+//     }
+//     @media #{$lrg}{
+//         padding-top: 4rem;
+//         padding-bottom: 4rem;
+//     }
+// }
 
 .portfolio-piece {
     padding: 1rem;
@@ -195,15 +321,9 @@
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
-    padding: 2rem 0;
     margin-bottom: 0;
-    @media #{$med} {padding: 3rem 0}
-    @media #{$lrg} {
-        // background-position: top 15% right;
-        padding: 4rem 0;
-    }
-
 }
+
 .blog {
     &__container {
         margin-left: 1rem;
@@ -257,6 +377,7 @@
 .footer-list {
     color: $light;
     font-size: .875rem;
+    // FIX MARGINS -- THEY NEED TO BE RESPONSIVE
     margin: 4rem auto 4rem;
 
     @media #{$lrg}{
@@ -285,3 +406,20 @@
         margin-left: 2rem;
     }
 }
+
+// add top padding to sections
+.padding {
+    @media #{$xsml}{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    @media #{$med}{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    @media #{$lrg}{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+

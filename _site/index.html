@@ -14,32 +14,39 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </head>
-
   <body>
-    <div class="content">
-          <body class="is-scrolling">
-    <div class="content">
-        <div class="header-background">
-        <header class="header header--sticky">
-            <div class="container header__container">
-            <h1 id="site-title" class="header__title">Matt Underwood</h1>
-            <a href="mailto:mattu7@gmail.com" class="button header__button" id="contact-me">Contact Me</a>
-            </div>
-        </header>
-        <div class="hero row">
-            <h1 class="hero__headline med--col-5 lrg--col-7">
-                Hi, I'm Matt Underwood;<br>
-                a Full-Stack developer based in Denver, CO.
-            </h1>
-            <p class="hero__description med--col-5 lrg--col-7">
-                I'm an experienced digital marketer and program coordinator seeking a position with a non-profit organization that focuses on social or environmental issues. I'm interested in blockchain technology and am looking for new challenges in an environment that fosters growth.</p>
-            <!-- <a href="" class="hero__link block med--col-5 lrg--col-7">Learn More About Me</a> -->
+    <!-- Navigation -->
+    <nav class="nav" id="navs">
+        <!-- Hamburger Menu -->
+        <a href="index.html" id="mattUnderwood">Matt Underwood</a>
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle">
+        <!-- Navigation Options -->
+        <div class="menu" id="menu">
+            <a href="index.html#about">About</a>
+            <a href="index.html#portfolio">Portfolio</a>
+            <a href="index.html#blog">Blog</a>
+            <a href="index.html#contact">Contact</a>
         </div>
+    </nav>
+    <div class="wrapper"></div>
+
+    <div class="content">
+                <div class="header-background" id="about">
+            <div class="hero">
+                <h1 class="hero__headline"> <!-- med--col-5 lrg--col-7 -->
+                    Hi, I'm Matt Underwood;<br>
+                    a self-taught Full-Stack developer and experienced digital marketer based in Denver, CO.
+                </h1>
+                <p class="hero__description"> <!-- med--col-5 lrg--col-7 -->
+                    I'm seeking a position with a non-profit organization that focuses on social or environmental issues. I'm interested in blockchain technology and am looking for new challenges in an environment that fosters growth.</p>
+                <!-- <a href="" class="hero__link block med--col-5 lrg--col-7">Learn More About Me</a> -->
+            </div>
         </div>
 
         <section id="portfolio">
-            <div class="row portfolio">
-                <h2 class="title-flex">Work</h2>
+            <div class="row padding">
+                <h2 class="title-flex">Portfolio</h2>
 
                 <a class="portfolio-piece med--col-2 lrg--col-3 decoration darken_taxi" href="https://ubudtaxiservice.com" target="_blank">
                     <h3 class="portfolio-piece__title">Ubud Taxi Service</h3>
@@ -70,10 +77,14 @@
 
 
         <section id="blog">
-            <div class="row">
+            <div class="row padding">
                 <div class="blog blog__container">
-                    <h2 class="title-flex decoration"><a href="/blog">Blog</a></h2>
+                    <h2 class="title-flex"><a class="decoration" id="blog-title" href="/blog">Blog</a></h2>
                         <ul>
+                            
+                            <li class="post">
+                                <h3 class="blog__article-title"><a class="blog__article-link" href="/test/2019/01/19/test-post-2.html">Test Post 2</a></h3>
+                            </li>
                             
                             <li class="post">
                                 <h3 class="blog__article-title"><a class="blog__article-link" href="/web%20development/2019/01/16/building-ubud-taxi-service.html">Building Ubud Taxi Service</a></h3>
@@ -81,10 +92,6 @@
                             
                             <li class="post">
                                 <h3 class="blog__article-title"><a class="blog__article-link" href="/test/2019/01/05/test-post-1.html">Test Post</a></h3>
-                            </li>
-                            
-                            <li class="post">
-                                <h3 class="blog__article-title"><a class="blog__article-link" href="/test/2019/01/01/test-post-2.html">Test Post 2</a></h3>
                             </li>
                             
                         </ul>
@@ -102,12 +109,13 @@
             <a href="https://twitter.com/matt_underwood4" class="social__button twitter"target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
         </div>
         <a href="mailto:mattu7@gmail.com" class="button contact__button " id="contact-button">Contact Me</a>
+        <!-- **** I HATE THESE SINCE IT OPENS iMAIL - MAKE A DROPDOWN CONTACT FORM THAT EMAILS ME -->
     </section>
 
     <footer class="container">
         <ul class="footer-list">
-            <li class="footer-list__item">© 2018 All Rights Reserved</li>
-            <li class="footer-list__item copy">Development by <a href="" class="developer">Matt Underwood</a></li>
+            <li class="footer-list__item">© 2019 All Rights Reserved</li>
+            <li class="footer-list__item copy">Development by <a href="https://www.linkedin.com/in/matt-underwood/" class="developer">Matt Underwood</a></li>
             <li class="footer-list__item">Photos from <a href="https://www.unsplash.com" target="_blank">Unsplash.com</a></li>
         </ul>
     </footer>

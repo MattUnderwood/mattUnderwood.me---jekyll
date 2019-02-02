@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <title>Blog</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -14,19 +13,41 @@
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-</head>
-<body class="is-scrolling">
-    <header class="header header--sticky">
-        <div class="container header__container">
-            <h1 id="site-title" class="header__title">Matt Underwood</h1>
-            <a href="mailto:mattu7@gmail.com" class="button header__button" id="contact-me">Contact Me</a>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav" id="navs">
+        <!-- Hamburger Menu -->
+        <a href="index.html" id="mattUnderwood">Matt Underwood</a>
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle">
+        <!-- Navigation Options -->
+        <div class="menu" id="menu">
+            <a href="index.html#about">About</a>
+            <a href="index.html#portfolio">Portfolio</a>
+            <a href="index.html#blog">Blog</a>
+            <a href="index.html#contact">Contact</a>
         </div>
-    </header>
+    </nav>
+    <div class="wrapper"></div>
 
-<div class="container">
+    <div class="content">
+        <div class="container row">
   <h2 class="spacing">Blog</h2>
 
   <div class="blog-posts">
+    
+      <div class="blog-post spacing">
+        <h3><a href="/test/2019/01/19/test-post-2.html">Test Post 2</a></h3>
+        <p class="summary">
+          Test
+          <span class="date">
+            January 19, 2019
+          </span>
+        </p>
+        <p>this is my second test post!</p>
+
+      </div>
     
       <div class="blog-post spacing">
         <h3><a href="/web%20development/2019/01/16/building-ubud-taxi-service.html">Building Ubud Taxi Service</a></h3>
@@ -68,29 +89,27 @@ The taxi situation in Ubud was not ideal and they charge extortionate amounts fo
     
   </div>
 </div>
-
-<section id="contact" class="contact">
-    <h2 class="contact__title white center">Get in Touch</h2>
-    <div class="contact__social social">
-        <a href="https://github.com/MattUnderwood" class="social__button github" target="_blank"><i class="fa fa-github"
-                aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com/in/matt-underwood/" class="social__button linkedin" target="_blank"><i class="fa fa-linkedin"
-                aria-hidden="true"></i></a>
-        <a href="https://twitter.com/matt_underwood4" class="social__button twitter" target="_blank"><i class="fa fa-twitter"
-                aria-hidden="true"></i></a>
     </div>
-    <a href="mailto:mattu7@gmail.com" class="button contact__button " id="contact-button">Contact Me</a>
-</section>
 
-<footer class="container">
-    <ul class="footer-list">
-        <li class="footer-list__item">© 2018 All Rights Reserved</li>
-        <li class="footer-list__item copy">Development by <a href="" class="developer">Matt Underwood</a></li>
-        <li class="footer-list__item">Photos from <a href="https://www.unsplash.com" target="_blank">Unsplash.com</a></li>
-    </ul>
-</footer>
+    <section id="contact" class="contact">
+        <h2 class="contact__title white center">Get in Touch</h2>
+        <div class="contact__social social">
+            <a href="https://github.com/MattUnderwood" class="social__button github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/matt-underwood/" class="social__button linkedin" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/matt_underwood4" class="social__button twitter"target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+        <a href="mailto:mattu7@gmail.com" class="button contact__button " id="contact-button">Contact Me</a>
+        <!-- **** I HATE THESE SINCE IT OPENS iMAIL - MAKE A DROPDOWN CONTACT FORM THAT EMAILS ME -->
+    </section>
 
-<script type="text/javascript" src="assets/js/main.js"></script>
-</body>
+    <footer class="container">
+        <ul class="footer-list">
+            <li class="footer-list__item">© 2019 All Rights Reserved</li>
+            <li class="footer-list__item copy">Development by <a href="https://www.linkedin.com/in/matt-underwood/" class="developer">Matt Underwood</a></li>
+            <li class="footer-list__item">Photos from <a href="https://www.unsplash.com" target="_blank">Unsplash.com</a></li>
+        </ul>
+    </footer>
 
+    <script type="text/javascript" src="assets/js/main.js"></script>
+  </body>
 </html>

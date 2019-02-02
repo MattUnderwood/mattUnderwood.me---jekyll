@@ -9,9 +9,13 @@ body {
     position: relative;
 }
 
-.hero__description {
-    font-size: 1.15rem;
-}
+// .hero__headline {
+//         font-size: 1.75rem;
+// }
+
+// .hero__description {
+//     font-size: 1.10rem;
+// }
 
 h1, h2, h3, h4, h5 {
     font-family: $SourceSans;
@@ -67,6 +71,10 @@ a {
         background: $link;
         margin-right: .5rem;
     }
+}
+
+#blog-title {
+    color: #000000;
 }
 
 .decoration {

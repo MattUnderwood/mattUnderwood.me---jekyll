@@ -16,6 +16,20 @@
 		"oAP": "/.htaccess",
 		"oF": 0
 		},
+	"/_includes/footer.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/_includes/footer.html",
+		"oF": 0
+		},
+	"/_includes/header.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/_includes/header.html",
+		"oF": 0
+		},
 	"/_layouts/default.html": {
 		"cB": 0,
 		"ft": 8192,

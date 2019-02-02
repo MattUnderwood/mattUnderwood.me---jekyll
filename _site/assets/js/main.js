@@ -1,19 +1,23 @@
-/* global $ */
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navs").style.top = "0";
+    } else {
+        document.getElementById("navs").style.top = "-74px";
+    }
+    prevScrollpos = currentScrollPos;
+};
 
-// When document is ready...
-$(function() {
-    $('.header').removeClass('header--sticky');
-    $('body').removeClass('is-scrolling');
-});
+// Close hamburger dropdown menu when a menu link is clicked
+var menu = document.getElementById('menu');
+var toggle = document.getElementById("toggle");
 
-$(function(){
-    $(window).scroll(function(){
-        if ($(this).scrollTop() > 420) {
-            $('.header').addClass('header--sticky');
-            $('body').addClass('is-scrolling');
-        } else {
-            $('.header').removeClass('header--sticky');
-            $('body').removeClass('is-scrolling');
-        }
-    });
-});
+menu.addEventListener('click', handleMenuClick);
+
+function handleMenuClick(event) {
+    if (event.target instanceof HTMLAnchorElement) {
+        toggle.checked = false;
+    }
+}
