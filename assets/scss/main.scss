@@ -320,6 +320,9 @@ label {
         margin: 0 1rem;
         margin-top: 0;
     }
+    &__spacer {
+        padding-top: .5rem;
+    }
     &__article-title {
         margin-top: 2rem;
         &:first-child {margin-top: 1.5rem}
@@ -443,7 +446,7 @@ label {
         background-repeat: no-repeat;
         margin-bottom: 0;
         width: 100%;
-        height: 80vh;  // calc(100vh - 70px); if I remove the margin-top below
+        height: 70vh;  // calc(100vh - 70px); if I remove the margin-top below
         padding: 2rem 1rem;
         margin-top: -70px;
         display: flex;
@@ -454,23 +457,22 @@ label {
 
 .my-blog {
     max-width: 60%;
-    margin-top: 70px;
     margin-bottom: 35px;
 
         &__headline {
             margin-bottom: 1.5rem;
 
             @media #{$xsml} {
-                font-size: 1.25rem;
+                font-size: 2rem;
             }
             @media #{$small} {
-                font-size: 1.5rem;
+                font-size: 2.5rem;
             }
             @media #{$med} {
-                font-size: 1.75rem;
+                font-size: 3rem;
             }
             @media #{$lrg} {
-            font-size: 3rem;
+            font-size: 4rem;
             }
         }
         &__description {
@@ -488,4 +490,29 @@ label {
             }
         }
     }
+
+// FOR BLOG PAGE (not the index page blog snippet)
+
+.center-me {
+    display: flex;
+    justify-content: center;
+}
+.posted {
+    min-width: 360px;
+    max-width: 700px;
+}
+
+hr {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    border: 0;
+    border-top: 1px solid #efefef;
+}
+
+@media (min-width: 768px) {
+    .single-post {
+        padding: 3em 1em 4.5em;
+    }
+}
+
 

@@ -2,6 +2,7 @@
 layout: post
 title: Building Ubud Taxi Service
 category: Web Development
+excerpt: I recently visited the island of Bali (which is located in Indonesia). During my time there I met an awesome taxi driver named Dewa that was struggling to keep up with the changing technologies that his customers were using to arrange their transporation while in Bali. This interaction spurred me to create a website for Dewa to help him compete with the changing transporation landscape in Bali. Check out this post to learn more about the website I created and the process/technologies I used to get everything up and running.
 ---
 
 Backstory (Click here to skip to the coding/design section)

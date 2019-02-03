@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -18,7 +18,7 @@
     <!-- Navigation -->
     <nav class="nav" id="navs">
         <!-- Hamburger Menu -->
-        <a href="index.html" id="mattUnderwood">Matt Underwood</a>
+        <a href="/index.html" id="mattUnderwood">Matt Underwood</a>
         <label for="toggle">&#9776;</label>
         <input type="checkbox" id="toggle">
         <!-- Navigation Options -->
@@ -26,7 +26,7 @@
             <a href="index.html#about">About</a>
             <a href="index.html#portfolio">Portfolio</a>
             <a href="index.html#blog">Blog</a>
-            <a href="index.html#contact">Contact</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
     <div class="wrapper"></div>
@@ -41,70 +41,67 @@
   </div>
 </div>
 
-<div class="row padding">
-
-  <div class="">
+<div class="row padding center-me">
+  <div class="posted">
     
-      <div class="blog-post spacing">
-        <h3 id="blog-posts"><a href="/test/2019/01/19/test-post-2.html">Test Post 2</a></h3>
-        <p class="summary blog__container">
-          Test
+    <div class="single-post">
+      <h3 class="decoration"><a class="blog-post-title decoration" href="/web%20development/2019/01/16/building-ubud-taxi-service.html">Building Ubud Taxi Service</a></h3>
           <span class="date">
-            January 19, 2019
+            Posted January 16, 2019
           </span>
-        </p>
-        <div class="blog__container">
-          <p>this is my second test post!</p>
-
-        </div>
-      </div>
+          <!-- <p class="post-category">
+            Web Development
+          </p> -->
+          <p>
+            I recently visited the island of Bali (which is located in Indonesia). During my time there I met an awesome taxi driver named Dewa that was struggling to keep up with the changing technologies that his customers were using to arrange their transporation while in Bali. This interaction spurred me to create a website for Dewa to help him compete with the changing transporation landscape in Bali. Check out this post to learn more about the website I created and the process/technologies I used to get everything up and running.
+          </p>
+          <a class="read-more decoration" href="/web%20development/2019/01/16/building-ubud-taxi-service.html">Read More</a>
+    </div>
+    <hr>
     
-      <div class="blog-post spacing">
-        <h3 id="blog-posts"><a href="/web%20development/2019/01/16/building-ubud-taxi-service.html">Building Ubud Taxi Service</a></h3>
-        <p class="summary blog__container">
-          Web Development
+    <div class="single-post">
+      <h3 class="decoration"><a class="blog-post-title decoration" href="/test/2019/01/05/test-post-1.html">Test Post</a></h3>
           <span class="date">
-            January 16, 2019
+            Posted January 05, 2019
           </span>
-        </p>
-        <div class="blog__container">
-          <p>Backstory (Click here to skip to the coding/design section)
-The taxi situation in Ubud was not ideal and they charge extortionate amounts for transportation. I had heard about this before arriving so I pre-arranged a taxi from the airport with my homestay which cost (300k - a little bit cheaper than the usual 350k). Since I got in so late (around 2AM) I didn’t need any additional transportation until the morning. When I woke up I spoke with Nyoman (an employee and amazing breakfast cook) and he helped me arrange a scooter rental directly across the street. I agreed to a price of 50k per day for a length of 5 days. As you can see, scooter rentals are significantly cheaper than using a taxi, and the cost of fuel is extremely low.</p>
+          <!-- <p class="post-category">
+            Test
+          </p> -->
+          <p>
+            <p>this is a test post!</p>
 
-
-        </div>
-      </div>
+          </p>
+          <a class="read-more decoration" href="/test/2019/01/05/test-post-1.html">Read More</a>
+    </div>
+    <hr>
     
-      <div class="blog-post spacing">
-        <h3 id="blog-posts"><a href="/test/2019/01/05/test-post-1.html">Test Post</a></h3>
-        <p class="summary blog__container">
-          Test
+    <div class="single-post">
+      <h3 class="decoration"><a class="blog-post-title decoration" href="/test/2019/01/01/test-post-2.html">Test Post 2</a></h3>
           <span class="date">
-            January 05, 2019
+            Posted January 01, 2019
           </span>
-        </p>
-        <div class="blog__container">
-          <p>this is a test post!</p>
+          <!-- <p class="post-category">
+            Test
+          </p> -->
+          <p>
+            <p>this is my second test post!</p>
 
-        </div>
-      </div>
-    
-      <div class="blog-post spacing">
-        <h3 id="blog-posts"><a href="/test/2019/01/01/test-post-2.html">Test Post 2</a></h3>
-        <p class="summary blog__container">
-          Test
-          <span class="date">
-            January 01, 2019
-          </span>
-        </p>
-        <div class="blog__container">
-          <p>this is my second test post!</p>
-
-        </div>
-      </div>
+          </p>
+          <a class="read-more decoration" href="/test/2019/01/01/test-post-2.html">Read More</a>
+    </div>
+    <hr>
     
   </div>
 </div>
+
+
+<!-- TEST MATERIAL -->
+<!-- <div class="row padding center-me">
+    <div class="posted">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eius, fugiat quod dolorem ab esse veniam magnam necessitatibus velit qui earum. Nostrum saepe qui minus a excepturi iste, in architecto?</p>
+    </div>
+</div> -->
+
     </div>
 
     <section id="contact" class="contact">
@@ -126,6 +123,7 @@ The taxi situation in Ubud was not ideal and they charge extortionate amounts fo
         </ul>
     </footer>
 
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    <!-- Javascript -->
+    <script type="text/javascript" src="/assets/js/main.js"></script>
   </body>
 </html>

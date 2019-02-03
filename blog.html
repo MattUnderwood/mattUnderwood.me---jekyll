@@ -12,22 +12,31 @@ title: Blog
   </div>
 </div>
 
-<div class="row padding">
-
-  <div class="">
+<div class="row padding center-me">
+  <div class="posted">
     {% for post in site.posts %}
-      <div class="blog-post spacing">
-        <h3 id="blog-posts"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        <p class="summary blog__container">
-          {{ post.category }}
+    <div class="single-post">
+      <h3 class="decoration"><a class="blog-post-title decoration" href="{{ post.url }}">{{ post.title }}</a></h3>
           <span class="date">
-            {{ post.date | date: '%B %d, %Y' }}
+            Posted {{ post.date | date: '%B %d, %Y' }}
           </span>
-        </p>
-        <div class="blog__container">
-          {{ post.excerpt }}
-        </div>
-      </div>
+          <!-- <p class="post-category">
+            {{ post.category }}
+          </p> -->
+          <p>
+            {{ post.excerpt }}
+          </p>
+          <a class="read-more decoration" href="{{ post.url }}">Read More</a>
+    </div>
+    <hr>
     {% endfor %}
   </div>
 </div>
+
+
+<!-- TEST MATERIAL -->
+<!-- <div class="row padding center-me">
+    <div class="posted">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eius, fugiat quod dolorem ab esse veniam magnam necessitatibus velit qui earum. Nostrum saepe qui minus a excepturi iste, in architecto?</p>
+    </div>
+</div> -->
