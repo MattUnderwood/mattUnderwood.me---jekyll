@@ -2,7 +2,7 @@
 layout: post
 title: Why I Created Ubud Taxi Service
 category: Web Development
-excerpt: I recently visited the island of Bali (located in Indonesia). During my time there I met an awesome taxi driver named Dewa that was struggling to keep up with the changing technologies that his customers were using to arrange their transporation while in Bali. This interaction spurred me to create a website for Dewa to help him compete with the changing transporation landscape in Bali. Check out this post to learn more about the website I created and the process/technologies I used to get everything up and running.
+excerpt: I recently visited the island of Bali in Indonesia. During my time there I met an awesome taxi driver named Dewa that was struggling to keep up with the changing technologies that his customers were using to arrange their transporation while in Bali. Check out this post to learn more about why I decided to create ubudTaxiService.com
 ---
 
 <h3>Backstory</h3>

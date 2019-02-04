@@ -465,17 +465,23 @@ label {
 
 .footer-list {
   color: #9B9B9B;
-  font-size: .875rem;
-  margin: 4rem auto 4rem; }
-  @media only screen and (min-width: 1024px) {
-    .footer-list {
-      margin: 2rem; } }
+  font-size: .9rem;
+  margin: 2rem;
+  text-align: center; }
   .footer-list__item {
     display: inline-block;
     margin-right: .5rem; }
-    .footer-list__item:after {
-      content: "|";
-      margin-left: .5rem; }
+    @media (min-width: 1px) and (max-width: 504px) {
+      .footer-list__item {
+        content: "";
+        margin-top: .3rem;
+        text-align: center;
+        display: block; } }
+    @media (min-width: 505px) {
+      .footer-list__item:after {
+        content: "|";
+        margin-left: .5rem;
+        display: inline-block; } }
     .footer-list__item:last-child:after {
       content: none; }
 

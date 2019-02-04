@@ -365,20 +365,25 @@ label {
 
 .footer-list {
     color: $light;
-    font-size: .875rem;
-    // FIX MARGINS -- THEY NEED TO BE RESPONSIVE
-    margin: 4rem auto 4rem;
-
-    @media #{$lrg}{
-        margin: 2rem;
-    }
+    font-size: .9rem;
+    margin: 2rem;
+    text-align: center;
 
     &__item {
         display: inline-block;
         margin-right: .5rem;
+        @media (min-width: 1px) and (max-width: 504px) {
+                content: "";
+                margin-top: .3rem;
+                text-align: center;
+                display: block;
+            }
         &:after {
-            content: "|";
-            margin-left: .5rem;
+            @media (min-width: 505px) {
+                content: "|";
+                margin-left: .5rem;
+                display: inline-block;
+            }
         }
         &:last-child {
             &:after {content: none}
