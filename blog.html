@@ -12,11 +12,11 @@ title: Blog
   </div>
 </div>
 
-<div class="row padding center-me">
+<div class="row blog-padding center-me">
   <div class="posted">
     {% for post in site.posts %}
     <div class="single-post">
-      <h3 class="decoration"><a class="blog-post-title decoration" href="{{ post.url }}">{{ post.title }}</a></h3>
+      <h2 class="decoration"><a class="blog-post-title decoration" href="{{ post.url }}">{{ post.title }}</a></h3>
           <span class="date">
             Posted {{ post.date | date: '%B %d, %Y' }}
           </span>

@@ -1,11 +1,39 @@
 ---
 layout: default
 ---
-<div class="container">
-    <h2 class="spacing">{{ page.title }}</h2>
-
-    <div class="blog-post spacing">
-        <p class="summary">{{ page.category }}<span class="date">{{ page.date | date: '%B %d, %Y' }}</span></p>
-        {{ content }}
+<div class="row center-me">
+    <div class="posted">
+        <div class="single-post">
+            <h2 class="blog-post-title decoration">{{ page.title }}</h2>
+                <span class="date">{{ page.date | date: '%B %d, %Y' }}</span>
+                <p>{{ page.category }}</p>
+                {{ content }}
+        </div>
     </div>
 </div>
+
+<!-- Last and next post feature at the bottom of each individual blog post -->
+<div class="row center-me">
+    <div class="related-posts">
+        <section>
+            {% if page.previous.url %}
+                <a class="previous-post decoration" href="{{page.previous.url}}">Last Post</a>
+                    <h4>{{page.previous.title}}</h4>
+                    <span class="post-date">{{ page.previous.date | date: '%B %d, %Y' }}</span>
+            {% endif %}
+        </section>
+
+        <div class="vertical-divider"></div>
+            
+        <section>
+            {% if page.next.url %}
+                <a class="next-post decoration" href="{{page.next.url}}">Next Post</a>
+                    <h4>{{page.next.title}}</h4>
+                    <span class="post-date">{{ page.next.date | date: '%B %d, %Y' }}</span>
+            {% endif %}
+        </section>
+    </div>
+</div>
+    
+    
+    

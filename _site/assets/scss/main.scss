@@ -310,7 +310,7 @@ label {
 #blog {
     background: url(../images/blog-section-background.jpg);
     background-size: cover;
-    background-position: right;
+    background-position: bottom;
     background-repeat: no-repeat;
     margin-bottom: 0;
 }
@@ -493,6 +493,18 @@ label {
 
 // FOR BLOG PAGE (not the index page blog snippet)
 
+.blog-padding {
+    @media #{$xsml}{
+        padding-bottom: 2rem;
+    }
+    @media #{$med}{
+        padding-bottom: 2rem;
+    }
+    @media #{$lrg}{
+        padding-bottom: 4rem;
+    }
+}
+
 .center-me {
     display: flex;
     justify-content: center;
@@ -500,13 +512,21 @@ label {
 .posted {
     min-width: 360px;
     max-width: 700px;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 hr {
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin: 0;
     border: 0;
+    width: 100%;
     border-top: 1px solid #efefef;
+    border-color: #c1c3c6;
+}
+
+.single-post {
+    margin: 0 auto;
+    padding: 35px 1em 30px;
 }
 
 @media (min-width: 768px) {
@@ -516,3 +536,92 @@ hr {
 }
 
 
+// INDIVIDUAL BLOG POST CSS
+.blog-image {
+    width: 100%;
+}
+
+// FOR RELATED POSTS SECTION AT BOTTOM OF INDIVIDUAL BLOG POSTS
+
+.related-posts {
+    display: flex;
+    min-width: 700px;
+
+        @media (min-width: 768px) {
+            .related-posts {
+                display: flex; 
+            }
+            .related-posts section:first-of-type {
+                padding-right: 2em; 
+            }
+            .related-posts section:last-of-type {
+                padding-left: 2em; 
+            } 
+        }
+    }
+
+.related-posts section {
+    flex: 1; 
+}
+
+.related-posts section:first-of-type {
+    padding: 1em 1em 1em 0;
+    text-align: right;
+}
+
+.related-posts section:last-of-type {
+    padding: 1em 0 1em 1em; 
+}
+    
+.related-posts section h4 {
+    font-weight: 700;
+    margin: 10px 0; 
+}
+    
+.related-posts section .post-date {
+    font-size: .9rem; 
+    color: #C2C4C7;
+}
+
+.previous-post {
+    text-align: right; 
+    color: #E77445;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+        &::before {
+            content: url("../images/icons/arrow.svg");
+            height: 1rem;
+            width: 1rem;
+            color: #E77445;
+            display: inline-block;
+            margin-right: 15px;
+            vertical-align: text-bottom;
+            transform: rotate(180deg);
+        }
+}
+
+.next-post {
+    color: #E77445;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+        &::after {
+            content: url("../images/icons/arrow.svg");
+            height: 1rem;
+            width: 1rem;
+            color: #E77445;
+            display: inline-block;
+            margin-left: 15px;
+            vertical-align: text-bottom;
+        }
+}
+
+.vertical-divider {
+    background-color: #c1c3c6;
+    height: 80px;
+    margin: 18px 0 35px;
+    width: 1px;
+}
