@@ -451,6 +451,8 @@ label {
     margin-bottom: 2rem; }
   .contact__button {
     width: 18rem; }
+    .contact__button:hover {
+      color: white; }
 
 .social {
   display: flex;
@@ -593,8 +595,12 @@ label {
 .posted {
   min-width: 360px;
   max-width: 700px;
-  padding-left: 3rem;
-  padding-right: 3rem; }
+  padding-left: .5rem;
+  padding-right: .5rem; }
+  @media (min-width: 525px) {
+    .posted {
+      padding-left: 3rem;
+      padding-right: 3rem; } }
 
 hr {
   margin: 0;
@@ -606,10 +612,19 @@ hr {
 .single-post {
   margin: 0 auto;
   padding: 35px 1em 30px; }
+  .single-post:first-child {
+    padding-top: 3rem; }
+  .single-post:after {
+    content: " ";
+    display: block;
+    margin-top: 4.5rem;
+    border: 0;
+    width: 100%;
+    border-top: 1px solid #efefef;
+    border-color: #c1c3c6; }
+  .single-post:last-child:after {
+    content: none; }
 
-@media (min-width: 768px) {
-  .single-post {
-    padding: 3em 1em 4.5em; } }
 .blog-image {
   width: 100%; }
 
