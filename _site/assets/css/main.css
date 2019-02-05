@@ -630,10 +630,14 @@ hr {
 
 .related-posts {
   display: flex;
-  min-width: 700px; }
+  min-width: 320px;
+  width: 100%; }
+  @media (min-width: 400px) {
+    .related-posts .related-posts {
+      min-width: 400px; } }
   @media (min-width: 768px) {
     .related-posts .related-posts {
-      display: flex; }
+      min-width: 700px; }
     .related-posts .related-posts section:first-of-type {
       padding-right: 2em; }
     .related-posts .related-posts section:last-of-type {
