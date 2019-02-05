@@ -1,0 +1,85 @@
+---
+layout: post
+title: Building Ubud Taxi Service
+category: Web Development
+excerpt: As you learned in my previous post "Why I Created Ubud Taxi Service", I had an interaction with a great taxi driver named Dewa in Bali that led me to create a website to help him compete with the changing transporation landscape in the area. Check out this post to learn more about the website I created and the process/technologies I used to get everything up and running.
+---
+
+<h3>Research and Design</h3>
+
+After performing basic keyword research I found that “Ubud Taxi”, “Taxi Ubud”, and “Ubud Taxi Service” (and variations of these names) consistently had the highest volume of searches in the Google keyword search rankings. The .com domains for the first two terms were already taken, but “Ubud Taxi Service” was available. I think this domain can reach the top of Googles search results for the above terms if I focus on search engine optimization (SEO). 
+
+I decided to purchase the "ubudTaxiService.com" domain and am excited to start this project so I can help Dewa support his family. I’m going to keep things basic and plan to make a lightweight responsive site. I assume most tourists are searching for cabs while they are on the go and that they don’t have laptops with them since they are on vacation. For these reasons, I will design the website for a mobile first experience (while still providing a great tablet/desktop experience through responsive design). 
+
+I plan to break the site into 5 main categories: Home, About, Services, Photo Gallery, and Contact. 
+
+A blog can potentially be added to the site if I have trouble breaking into the top search results or if competition increases overtime, but based on the current competition, I don’t think this is essential right now. 
+
+I want to keep the design simple and make the site easily navigable for potential customers. I think most customers will appreciate a well designed website and this alone could be the difference for which cab service they choose (I know when I’m traveling that I typically associate a well designed website with a well thought out and polished business model - this has proven true many times for me). 
+
+Once I get a nice layout and basic content generated I’m going to show the site to Dewa, and then work on producing additional content, and tweaking the site to include information about Dewa and Ubud. 
+
+<h3>Coding the Site</h3>
+I started working on the site almost immediately after I checked into my new accommodations and kept working on it until it was in decent shape. I’m starting to add some basic content and am removing the lorem ipsum placeholders I started with. Things are shaping up quick and I could have a solid site ready to go live within the next week or so. I know that the sooner I can get the site hosted, the better I will do in the search rankings (the age of the domain and site reliability play a large part in making it to the top of Google's search results).
+
+After getting the basic design coded up and layed out, I decided to implement a “hamburger” navigation menu. The menu I’m currently using isn’t terrible but it takes up a lot of space on mobile devices, and I think it will be a fun challenge to implement the new navigation style. 
+
+I used a tutorial titled “Responsive Menu With Media Queries (Checkbox Trick) - Using Only CSS3 Tutorial“ from Youtube. It was pretty straight forward and I initially implemented it as shown in the tutorial. I plan to make a few tweaks to the menu and cancel out some of the CSS Grid and other styling that was previously applied to the navigation menu. 
+
+I decided to optimize the navigation menu and made several improvements. I changed the colors, which are now slightly different than the rest of the page, and I think this helps it stand out more. I added the navigation menu as a sticky to the top of the page and used javascript to make it disappear when the user scrolls down, and return when they start to scroll up. This saves a lot of space on mobile and utilizes the screen real estate. 
+
+I also added a bit of javascript styling so that the links are colored when the user hovers over them. All of these tweaks proved to be slightly complex, but it was nothing I couldn’t figure out with some thinking and a few well worded Google searches. 
+
+<h3>Going Live and Hosting</h3>
+I've created a few webpages in the past and my goto host for static websites is StableHost. I upgraded my hosting plan with StableHost and pointed the nameservers on NameCheap (where I bought the domain) to the right location so my site would be live! 
+
+I sent Dewa a message on WhatsApp letting him know that the site was live. He didn’t respond for a bit but eventually got back to me and encouraged me to keep going for it and to do whatever I think the next logical steps are.
+
+I guess he is a bit more excited than I initially expected. He sent me 10 pictures of happy customers and then a bunch of pictures of him and his children (which I plan to add to the about page). I’m excited to finish this project, and if things go as planned, I think I can help change his life/income drastically. I asked for captions/locations of where the photos were taken so I can name them properly and create alt tags for them. I could upload the images now, but I’d rather wait until I have the correct information (since it will be less work). 
+
+<h3>CSS Layout Tweaks and Adding Custom Pictures</h3>
+When I created the initial layout of the site I used placeholder pictures since Dewa hadn't provided me with any material yet. I noticed that at certain screen widths the pictures towards the bottom of the page were off-set. I used a series of media queries to fix this issue and everything fits together perfectly now!
+
+Once I had the media queries set I uploaded the pictures Dewa sent me and put them through an image compressor. Once they were compressed I uploaded them to my Cloudinary account and created custom links for each picture in the photo gallery. Cloudinary is a great service and I enjoy having the ability to "transform" the each image through the url link I use (you can change the height and width along with many other variables).
+
+<h3>Search Engine Optimization (SEO)</h3>
+The main goal of this website is to rank #1 in the Google search engine results for "Ubud Taxi" and "Ubud Taxi Service". The only way this can be accomplished is by performing SEO. Since the site is already live, I want to start working on SEO as soon as possible. 
+
+I ran a free SEO audit by SEOptimizer.com and reviewed the results. This didn’t provide me with a lot of new information but I was able to fix an error where multiple elements had the same ID and replace them with new classes that did the job just as well. After this I linked the site to the Google Search Console (which I have experience with from previous sites) and created a sitemap with XML-sitemaps.com
+
+I love everything that goes into a website after the initial design is finished. There is nothing better than continually iterating through a design and optimizing for performance and visibility. I’ll need to wait a while until the search console has crawled my site, and I'm going to wait to make any additional changes until then. I’m also going to make a github repo for this project (which I should have already done) and keep my changes up to date. 
+
+
+<h4>Additional SEO Research</h4>
+After researching how to perform a better performance/SEO audit on my website, I discovered a recently released site from google called web.dev. This site performs the same functions that the “Audit” tab of the Chrome developer tools does, but it packages it all in a nice format and provides links to help you improve your page. I ran the test and discovered I have a lot of room for improvement and I decided that I will fix all of these issues before doing anything else to the design/content. 
+
+If I want to reach #1 in the Google search results, the site will need to be fully optimized. Since it will take a while to climb the rankings and gain visibility, I don’t think working on the content will pay off until this is taken care of. 
+
+<h3>SEO - Content Best Practices</h3>
+
+I learned several new things while updating my web page to comply with the advice from the Google SEO audit. The meta description should be used for the page title and an accurate and detailed description of the page content should be provided. I also learned that using a canonical link helps with SEO and guides the crawlers in the right direction while reducing confusion with the indexing of the site. Following Google’s recommendations from the audit improved my SEO rating to 100/100. 
+
+Even though I reached a rating of 100/100 there were still a few suggestions and notices that I wanted to fix up. The first was the robots.txt file, which my site didn’t have. Although the site is currently only 1 page, I read about what a robots.txt file is and why it is useful to improve your SEO ranking. In short, web crawlers have a dynamic limit and you don’t want their limit to be wasted on unimportant or non-indexed parts of your site. I created a file which allows open access to my site, but I may need to change this as the site grows. I also performed tests for structured data testing and mobile friendliness. These both came out good so I can check them off the list. 
+
+<h4>Page Performance</h4>
+My site only scored a 76 on this section and I know it is a very important factor in SEO rankings (and also contributes to improved usability from a customer perspective). This is something that needs to be ranked 100/100 if I want to get to the top of the rankings and provide users with a smooth and hassle free experience. The faster a site loads, the higher it will rank in search results, and the more likely users are to stay on-page and not exit for an alternate site. 
+
+<!-- insert fact or graphic about how many users are lost with over .5s load time -->
+
+<h4>Defer Offscreen Images</h4>
+Often referred to as “lazy loading” this is a technique that only loads images that are above the fold (images you will see when initially loading the page). You can use javascript to detect scrolling on the page and load images located further down the page when they are about to be viewed. Doing this results in a faster initial load time for the page, and saves user bandwidth until it is actually needed.
+
+<h4>Properly Size Images (Serve Responsive Images)</h4>
+This is something I had never heard of, but after learning about it, it makes a lot of sense. The general idea is that you should only serve the file size that is required for a certain view and there is no need to load a full-size image for a mobile version of a page. The implementations seems quite complicated but I’m going to read through the documentation and try to find the best solution for this project. 
+
+The documentation provided by Google was good, but not great, so I decided to turn to the trusty MDN web docs. Once I reviewed there explanation I understood how to solve the issue and used the src-set feature to set a few different image sizes based upon the width of the screen. Since I’m using Cloudinary for image hosting, I was able to edit the image src link to alter the dimensions. I’m starting to really like the service Cloudinary offer and can see how useful it may be in the future. 
+
+<h3>Adding New Pages and a Favicon</h3>
+After improving my pages performance, I decided to add additional pages to fill out the empty links that are on the page. This consisted of adding an “About” and “Services” page. 
+
+While working on this I realized I didn’t have a Favicon, and decided to focus on that before moving forward. As a web developer its important to use the tools at your disposal, and I found a site called “Favicon Generator” that made things very easy for me! I logged into my cPanel, uploaded the folder, extracted it, and added the proper code to my header file. 
+
+Afterwards I created an “About” page and started to code it out. I had a little confusion with the CSS Grid settings, but figured it out after referring to the docs. Once the page was looking nice, I linked it to the main page, and tested the different window sizes to make sure everything was responsive. Next, I will add the “Services” page, but this will likely be a “skeleton” model until I receive more information from Dewa. 
+
+<h3>Summary</h3>
+There are still a lot of improvements to be made to the site and further optimizations that can be worked on. I'm happy with the current progress thats been made and I will wait to see how the site responds to Google's search ranking algorithm before making any additional changes. Check back for future posts about the continued development and marketing of this website!
