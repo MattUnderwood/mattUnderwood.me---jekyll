@@ -602,13 +602,6 @@ label {
       padding-left: 3rem;
       padding-right: 3rem; } }
 
-hr {
-  margin: 0;
-  border: 0;
-  width: 100%;
-  border-top: 1px solid #efefef;
-  border-color: #c1c3c6; }
-
 .single-post {
   margin: 0 auto;
   padding: 35px 1em 30px; }
@@ -633,7 +626,7 @@ hr {
   min-width: 320px;
   width: 100%; }
   @media (min-width: 400px) {
-    .related-posts .related-posts {
+    .related-posts {
       min-width: 400px; } }
   @media (min-width: 768px) {
     .related-posts .related-posts {
@@ -695,8 +688,8 @@ hr {
 
 .vertical-divider {
   background-color: #c1c3c6;
-  height: 80px;
   margin: 18px 0 35px;
-  width: 1px; }
+  width: 1px;
+  height: 100px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -21,9 +21,6 @@
     display: flex;
     align-items: center; /* align vertical */
     justify-content: center;
-    // @media #{$med} {
-    //     padding: 0 1rem 8rem;
-    // }
 }
 
 .hero {
@@ -84,7 +81,6 @@
     background-color: white;
     overflow: hidden;
     padding-right: 50px;
-    // margin: 0px 20px 20px 20px;
     transition: top 0.5s;
     position: fixed;
     top: 0;
@@ -96,7 +92,7 @@
 	box-shadow: 0 8px 6px -7px gray;
 }
 
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .nav + .wrapper {
     padding-top: 70px;
   }
@@ -208,24 +204,6 @@ label {
     }
 
 }
-
-//  .portfolio {
-//     margin: 0;
-//     margin-right: 0;
-
-//     @media #{$xsml}{
-//         padding-top: 2rem;
-//         padding-bottom: 2rem;
-//     }
-//     @media #{$med}{
-//         padding-top: 2rem;
-//         padding-bottom: 2rem;
-//     }
-//     @media #{$lrg}{
-//         padding-top: 4rem;
-//         padding-bottom: 4rem;
-//     }
-// }
 
 .portfolio-piece {
     padding: 1rem;
@@ -341,7 +319,6 @@ label {
     justify-content: flex-start;
     align-items: center;
     flex-flow: column nowrap;
-    //&__title, &__social, &__button {flex: 100%;}
     &__social {
         margin-bottom: 2rem;
     }
@@ -526,14 +503,6 @@ label {
     }
 }
 
-hr {
-    margin: 0;
-    border: 0;
-    width: 100%;
-    border-top: 1px solid #efefef;
-    border-color: #c1c3c6;
-}
-
 .single-post {
     margin: 0 auto;
     padding: 35px 1em 30px;
@@ -544,7 +513,6 @@ hr {
             content: " ";
             display: block;
             margin-top: 4.5rem;
-            // margin: 0;
             border: 0;
             width: 100%;
             border-top: 1px solid #efefef;
@@ -554,13 +522,6 @@ hr {
                 content: none;
             }
 }
-
-// @media (min-width: 768px) {
-//     .single-post {
-//         padding-top: 1rem;
-//     }
-// }
-
 
 // INDIVIDUAL BLOG POST CSS
 .blog-image {
@@ -574,10 +535,8 @@ hr {
     min-width: 320px;
     width: 100%;
         @media (min-width: 400px) {
-            .related-posts {
-                min-width: 400px; 
+            min-width: 400px; 
             }
-        }
         @media (min-width: 768px) {
             .related-posts {
                 min-width: 700px; 
@@ -652,7 +611,7 @@ hr {
 
 .vertical-divider {
     background-color: #c1c3c6;
-    height: 80px;
     margin: 18px 0 35px;
     width: 1px;
+    height: 100px;
 }

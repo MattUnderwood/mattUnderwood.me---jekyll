@@ -2,7 +2,7 @@
 layout: post
 title: Building Ubud Taxi Service
 category: Web Development
-excerpt: As you learned in my previous post "Why I Created Ubud Taxi Service", I had an interaction with a great taxi driver named Dewa in Bali that led me to create a website to help him compete with the changing transporation landscape in the area. Check out this post to learn more about the website I created and the process/technologies I used to get everything up and running.
+excerpt: As you learned in my previous post "Why I Created Ubud Taxi Service", I had an interaction with a great taxi driver named Dewa. This interaction led me to create a website to help him compete with the changing transporation landscape in Bali. Check out this post to learn more about the website I created and the process/technologies I used to get everything up and running.
 ---
 
 <h3>Research and Design</h3>

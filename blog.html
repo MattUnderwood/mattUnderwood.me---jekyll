@@ -20,15 +20,11 @@ title: Blog
           <span class="date">
             Posted {{ post.date | date: '%B %d, %Y' }}
           </span>
-          <!-- <p class="post-category">
-            {{ post.category }}
-          </p> -->
           <p>
             {{ post.excerpt }}
           </p>
           <a class="read-more decoration" href="{{ post.url }}">Read More</a>
     </div>
-    <!-- <hr> -->
     {% endfor %}
   </div>
 </div>
