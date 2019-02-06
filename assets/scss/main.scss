@@ -21,9 +21,14 @@
     display: flex;
     align-items: center; /* align vertical */
     justify-content: center;
+    // this helps position the down arrow and pushes the image to the background so the nav bar is visible
+    position: relative;
+    z-index: 0;
 }
 
 .hero {
+    margin-bottom: 35px;
+    
     @media #{$xsml} {
         max-width: 90%;
     }
@@ -33,7 +38,6 @@
     @media #{$lrg} {
     max-width: 65%;
     }
-    margin-bottom: 35px;
         &__headline {
             margin-bottom: 1.5rem;
 
@@ -58,14 +62,49 @@
             @media #{$small} {
                 font-size: 1.2rem;
             }
-            @media #{$med} {
-                font-size: 1.3rem;
-            }
             @media #{$lrg} {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             }
         }
     }
+
+.down-arrow {
+    position: absolute;
+    text-align: center;    
+    font-size: 4rem;
+    bottom: 0;
+}
+
+#white {
+    color: white;
+}
+
+// Shake effect on hover
+.down-arrow:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
 
 /* Navigation Menu */
 .nav {
@@ -84,6 +123,7 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
     // shadow for bottom of nav bar
     -webkit-box-shadow: 0 8px 6px -7px gray;
 	-moz-box-shadow: 0 8px 6px -7px gray;
