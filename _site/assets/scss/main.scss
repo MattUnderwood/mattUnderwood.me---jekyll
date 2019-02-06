@@ -67,9 +67,7 @@
         }
     }
 
-// ******* NEW CODE FOR NAVBAR - THIS NEEDS TO BE ORGANIZED FOR SCSS and BEM ********
-
-/* Navigation */
+/* Navigation Menu */
 .nav {
     font-family: 'Montserrat', sans-serif;    
     font-weight: 400;
@@ -185,8 +183,7 @@ label {
         padding-right: 0px;
     }
 }
-
-// ******* END OF NEW CODE FOR NAVBAR - THIS NEEDS TO BE ORGANIZED FOR SCSS ********
+// End of code for navigation menu
 
 #contact-me {
     padding: 1rem 0;
@@ -232,11 +229,9 @@ label {
     @media #{$med}{
         margin-bottom: 2rem;
     }
-    @media #{$lrg}{
-        margin-bottom: 2rem;
-    }
 }
 
+// Individual Portfolio CSS
 .darken_taxi {
     background-image: 
     linear-gradient(
@@ -369,17 +364,9 @@ label {
     }
 }
 
-// make all rows have the same margin left
+// make all rows have the same margin left and right
 .row {
     @media #{$xsml}{
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    @media #{$small}{
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-    @media #{$med}{
         margin-left: 1rem;
         margin-right: 1rem;
     }
@@ -395,10 +382,6 @@ label {
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
-    @media #{$med}{
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
     @media #{$lrg}{
         padding-top: 4rem;
         padding-bottom: 4rem;
@@ -408,34 +391,18 @@ label {
 // BLOG PAGE CSS
 
 .blog-background {
-    @media #{$small} {
-        background: url(../images/blog-section-background.jpg);
-        background-size: cover;
-        background-position: bottom;        
-        background-repeat: no-repeat;
-        margin-bottom: 0;
-        width: 100%;
-        height: 70vh;  // calc(100vh - 70px); if I remove the margin-top below
-        padding: 2rem 1rem;
-        margin-top: -70px;
-        display: flex;
-        align-items: center; /* align vertical  */
-        justify-content: left;
-    }
-    @media #{$med} {
-        background: url(../images/blog-section-background.jpg);
-        background-size: cover;
-        background-position: bottom;
-        background-repeat: no-repeat;
-        margin-bottom: 0;
-        width: 100%;
-        height: 70vh;  // calc(100vh - 70px); if I remove the margin-top below
-        padding: 2rem 1rem;
-        margin-top: -70px;
-        display: flex;
-        align-items: center; /* align vertical  */
-        justify-content: left;
-    }
+    background: url(../images/blog-section-background.jpg);
+    background-size: cover;
+    background-position: bottom;        
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    width: 100%;
+    height: 70vh;  // calc(100vh - 70px); if I remove the margin-top below
+    padding: 2rem 1rem;
+    margin-top: -70px;
+    display: flex;
+    align-items: center; /* align vertical  */
+    justify-content: left;
 }
 
 .my-blog {
@@ -480,9 +447,6 @@ label {
     @media #{$xsml}{
         padding-bottom: 2rem;
     }
-    @media #{$med}{
-        padding-bottom: 2rem;
-    }
     @media #{$lrg}{
         padding-bottom: 4rem;
     }
@@ -523,54 +487,50 @@ label {
             }
 }
 
-// INDIVIDUAL BLOG POST CSS
+// Individual blog post CSS
 .blog-image {
     width: 100%;
 }
 
-// FOR RELATED POSTS SECTION AT BOTTOM OF INDIVIDUAL BLOG POSTS
+// Related posts section at the bottom of individual blog posts
 
 .related-posts {
     display: flex;
     min-width: 320px;
     width: 100%;
-        @media (min-width: 400px) {
-            min-width: 400px; 
-            }
-        @media (min-width: 768px) {
-            .related-posts {
-                min-width: 700px; 
-            }
-            .related-posts section:first-of-type {
-                padding-right: 2em; 
-            }
-            .related-posts section:last-of-type {
-                padding-left: 2em; 
-            } 
+
+    @media (min-width: 400px) {
+        min-width: 400px; 
+        }
+    @media (min-width: 768px) {
+        .related-posts {
+            min-width: 700px; 
+        }
+        .related-posts section:first-of-type {
+            padding-right: 2em; 
+        }
+        .related-posts section:last-of-type {
+            padding-left: 2em; 
+        } 
+    }
+    section {
+        flex: 1;
+        &:first-of-type {
+            padding: 1em 1em 1em 0;
+            text-align: right;
+        }
+        &:last-of-type {
+            padding: 1em 0 1em 1em; 
+        }
+        h4 {
+            font-weight: 700;
+            margin: 10px 0; 
+        }
+        .post-date {
+            font-size: .9rem; 
+            color: #C2C4C7;
         }
     }
-
-.related-posts section {
-    flex: 1; 
-}
-
-.related-posts section:first-of-type {
-    padding: 1em 1em 1em 0;
-    text-align: right;
-}
-
-.related-posts section:last-of-type {
-    padding: 1em 0 1em 1em; 
-}
-    
-.related-posts section h4 {
-    font-weight: 700;
-    margin: 10px 0; 
-}
-    
-.related-posts section .post-date {
-    font-size: .9rem; 
-    color: #C2C4C7;
 }
 
 .previous-post {

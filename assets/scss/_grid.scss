@@ -14,7 +14,6 @@ $screen : (
 );
 
 .container {
-	// max-width: 80rem;
 	margin: 0 auto;
 
 	&--flex {
@@ -47,9 +46,6 @@ $screen : (
         }
     }
 }
-
-.lrg, .med, .sml, .x-sml {padding: 0 1rem;}
-
 
 .col-4 { flex: 0 0 100%;}
 .col-2 { flex: 0 0 50%;}

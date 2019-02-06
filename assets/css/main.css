@@ -166,9 +166,6 @@ a:hover {
     .row--spaced {
       margin-bottom: 6rem; } }
 
-.lrg, .med, .sml, .x-sml {
-  padding: 0 1rem; }
-
 .col-4 {
   flex: 0 0 100%; }
 
@@ -202,8 +199,7 @@ a:hover {
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16), 0px 3px 6px 0px rgba(0, 0, 0, 0.23);
   padding: 1rem;
   text-align: center;
-  text-decoration: none;
-  transition: all .25s ease-in-out; }
+  text-decoration: none; }
   .button:hover {
     background: #e97a4e; }
 
@@ -260,7 +256,7 @@ a:hover {
     .hero__description {
       font-size: 1.4rem; } }
 
-/* Navigation */
+/* Navigation Menu */
 .nav {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -395,9 +391,6 @@ label {
   @media only screen and (min-width: 768px) {
     .portfolio-piece {
       margin-bottom: 2rem; } }
-  @media only screen and (min-width: 1024px) {
-    .portfolio-piece {
-      margin-bottom: 2rem; } }
 
 .darken_taxi {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://res.cloudinary.com/dls40gzte/image/upload/c_scale,q_40,w_800/v1547649604/mattUnderwood.me/ubud_taxi_service.jpg); }
@@ -491,14 +484,6 @@ label {
   .row {
     margin-left: 1rem;
     margin-right: 1rem; } }
-@media only screen and (min-width: 360px) {
-  .row {
-    margin-left: 1rem;
-    margin-right: 1rem; } }
-@media only screen and (min-width: 768px) {
-  .row {
-    margin-left: 1rem;
-    margin-right: 1rem; } }
 @media only screen and (min-width: 1024px) {
   .row {
     margin-left: 2rem;
@@ -508,45 +493,25 @@ label {
   .padding {
     padding-top: 2rem;
     padding-bottom: 2rem; } }
-@media only screen and (min-width: 768px) {
-  .padding {
-    padding-top: 2rem;
-    padding-bottom: 2rem; } }
 @media only screen and (min-width: 1024px) {
   .padding {
     padding-top: 4rem;
     padding-bottom: 4rem; } }
 
-@media only screen and (min-width: 360px) {
-  .blog-background {
-    background: url(../images/blog-section-background.jpg);
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    margin-bottom: 0;
-    width: 100%;
-    height: 70vh;
-    padding: 2rem 1rem;
-    margin-top: -70px;
-    display: flex;
-    align-items: center;
-    /* align vertical  */
-    justify-content: left; } }
-@media only screen and (min-width: 768px) {
-  .blog-background {
-    background: url(../images/blog-section-background.jpg);
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    margin-bottom: 0;
-    width: 100%;
-    height: 70vh;
-    padding: 2rem 1rem;
-    margin-top: -70px;
-    display: flex;
-    align-items: center;
-    /* align vertical  */
-    justify-content: left; } }
+.blog-background {
+  background: url(../images/blog-section-background.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+  width: 100%;
+  height: 70vh;
+  padding: 2rem 1rem;
+  margin-top: -70px;
+  display: flex;
+  align-items: center;
+  /* align vertical  */
+  justify-content: left; }
 
 .my-blog {
   max-width: 60%;
@@ -579,9 +544,6 @@ label {
       font-size: 1.4rem; } }
 
 @media only screen and (min-width: 320px) {
-  .blog-padding {
-    padding-bottom: 2rem; } }
-@media only screen and (min-width: 768px) {
   .blog-padding {
     padding-bottom: 2rem; } }
 @media only screen and (min-width: 1024px) {
@@ -635,24 +597,19 @@ label {
       padding-right: 2em; }
     .related-posts .related-posts section:last-of-type {
       padding-left: 2em; } }
-
-.related-posts section {
-  flex: 1; }
-
-.related-posts section:first-of-type {
-  padding: 1em 1em 1em 0;
-  text-align: right; }
-
-.related-posts section:last-of-type {
-  padding: 1em 0 1em 1em; }
-
-.related-posts section h4 {
-  font-weight: 700;
-  margin: 10px 0; }
-
-.related-posts section .post-date {
-  font-size: .9rem;
-  color: #C2C4C7; }
+  .related-posts section {
+    flex: 1; }
+    .related-posts section:first-of-type {
+      padding: 1em 1em 1em 0;
+      text-align: right; }
+    .related-posts section:last-of-type {
+      padding: 1em 0 1em 1em; }
+    .related-posts section h4 {
+      font-weight: 700;
+      margin: 10px 0; }
+    .related-posts section .post-date {
+      font-size: .9rem;
+      color: #C2C4C7; }
 
 .previous-post {
   text-align: right;
