@@ -130,7 +130,7 @@ a:hover {
 .read-more {
   color: #E77445;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 1px;
   margin-top: 2em;
   text-transform: uppercase; }
@@ -592,6 +592,8 @@ label {
 .single-post {
   margin: 0 auto;
   padding: 35px 1em 30px; }
+  .single-post p {
+    padding-top: .5rem; }
   .single-post:first-child {
     padding-top: 3rem; }
   .single-post:after {

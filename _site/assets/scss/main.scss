@@ -512,6 +512,9 @@ label {
 .single-post {
     margin: 0 auto;
     padding: 35px 1em 30px;
+        p {
+            padding-top: .5rem;
+        }
         &:first-child {
             padding-top: 3rem;
         }
