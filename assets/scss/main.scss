@@ -10,8 +10,7 @@
 @import 'modules';
 
 .header-background {
-    // background: url('https://res.cloudinary.com/dls40gzte/image/upload/c_scale,q_40,w_2000/v1523317884/mattUnderwood.me/hero-background.jpg');
-    background: url(../images/blog-section-background.jpg);
+    background: url('https://res.cloudinary.com/dls40gzte/image/upload/v1523317884/mattUnderwood.me/header-image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -322,7 +321,7 @@ label {
 }
 
 #blog {
-    background: url(../images/pencil-image.png);
+    background: url("https://res.cloudinary.com/dls40gzte/image/upload/v1549453884/mattUnderwood.me/pencil-image.jpg");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -432,8 +431,7 @@ label {
 // BLOG PAGE CSS
 
 .blog-background {
-    // background: url(../images/blog-section-background.jpg);
-    background: url(../images/pencil-image.png);
+    background: url("https://res.cloudinary.com/dls40gzte/image/upload/v1549453884/mattUnderwood.me/pencil-image.jpg");
     background-size: cover;
     background-position: top;        
     background-repeat: no-repeat;
@@ -512,7 +510,7 @@ label {
 .single-post {
     margin: 0 auto;
     padding: 35px 1em 30px;
-        p {
+        .p-preview {
             padding-top: .5rem;
         }
         &:first-child {

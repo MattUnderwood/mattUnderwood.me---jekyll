@@ -31,11 +31,13 @@ I decided to optimize the navigation menu and made several improvements. I chang
 I also added a bit of javascript styling so that the links are colored when the user hovers over them. All of these tweaks proved to be slightly complex, but it was nothing I couldn’t figure out with some thinking and a few well worded Google searches. 
 
 <h3>Going Live and Hosting</h3>
-I've created a few webpages in the past and my goto host for static websites is StableHost. I upgraded my hosting plan with StableHost and pointed the nameservers on NameCheap (where I bought the domain) to the right location so my site would be live! 
+I've created a few webpages in the past and my goto host for static websites is StableHost. I upgraded my hosting plan with StableHost and pointed the nameservers on NameCheap (where I bought the domain) to the right location so my site will go live! 
 
-I sent Dewa a message on WhatsApp letting him know that the site was live. He didn’t respond for a bit but eventually got back to me and encouraged me to keep going for it and to do whatever I think the next logical steps are.
+I sent Dewa a message on WhatsApp letting him know that the site was live. He got back to me and encouraged me to keep going for it and to do whatever I think the next logical steps are.
 
-I guess he is a bit more excited than I initially expected. He sent me 10 pictures of happy customers and then a bunch of pictures of him and his children (which I plan to add to the about page). I’m excited to finish this project, and if things go as planned, I think I can help change his life/income drastically. I asked for captions/locations of where the photos were taken so I can name them properly and create alt tags for them. I could upload the images now, but I’d rather wait until I have the correct information (since it will be less work). 
+I guess he is a bit more excited than I initially expected. He sent me 10 pictures of happy customers and then a bunch of pictures of him and his children (which I plan to add to the about page). 
+
+I’m excited to finish this project, and if things go as planned, I think I can help change his life/income drastically. I asked for captions/locations of where the photos were taken so I can name them properly and create alt tags for them. I could upload the images now, but I’d rather wait until I have the correct information (since it will be less work). 
 
 <h3>CSS Layout Tweaks and Adding Custom Pictures</h3>
 When I created the initial layout of the site I used placeholder pictures since Dewa hadn't provided me with any material yet. I noticed that at certain screen widths the pictures towards the bottom of the page were off-set. I used a series of media queries to fix this issue and everything fits together perfectly now!

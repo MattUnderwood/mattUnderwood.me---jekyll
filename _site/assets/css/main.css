@@ -204,7 +204,7 @@ a:hover {
     background: #e97a4e; }
 
 .header-background {
-  background: url(../images/blog-section-background.jpg);
+  background: url("https://res.cloudinary.com/dls40gzte/image/upload/v1523317884/mattUnderwood.me/header-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -436,7 +436,7 @@ label {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://res.cloudinary.com/dls40gzte/image/upload/c_scale,q_40,w_800/v1523317884/mattUnderwood.me/todo_list.jpg); }
 
 #blog {
-  background: url(../images/pencil-image.png);
+  background: url("https://res.cloudinary.com/dls40gzte/image/upload/v1549453884/mattUnderwood.me/pencil-image.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -524,7 +524,7 @@ label {
     padding-bottom: 4rem; } }
 
 .blog-background {
-  background: url(../images/pencil-image.png);
+  background: url("https://res.cloudinary.com/dls40gzte/image/upload/v1549453884/mattUnderwood.me/pencil-image.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -592,7 +592,7 @@ label {
 .single-post {
   margin: 0 auto;
   padding: 35px 1em 30px; }
-  .single-post p {
+  .single-post .p-preview {
     padding-top: .5rem; }
   .single-post:first-child {
     padding-top: 3rem; }
