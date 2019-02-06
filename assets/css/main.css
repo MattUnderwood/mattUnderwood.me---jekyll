@@ -535,12 +535,23 @@ label {
   margin-top: -70px;
   display: flex;
   align-items: center;
-  /* align vertical  */
-  justify-content: left; }
+  /* align vertical  */ }
+  @media only screen and (min-width: 360px) {
+    .blog-background {
+      justify-content: center; } }
+  @media only screen and (min-width: 768px) {
+    .blog-background {
+      justify-content: left; } }
 
 .my-blog {
   max-width: 60%;
   margin-bottom: 35px; }
+  @media (max-width: 660px) {
+    .my-blog {
+      max-width: 80%; } }
+  @media only screen and (min-width: 768px) {
+    .my-blog {
+      max-width: 60%; } }
   .my-blog__headline {
     margin-bottom: 1.5rem; }
     @media only screen and (min-width: 320px) {
