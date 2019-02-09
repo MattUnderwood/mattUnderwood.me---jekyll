@@ -135,11 +135,17 @@
     padding-top: 70px;
   }
 
+#mattUnderwood {
+    letter-spacing: .5px;
+
+}
+
 #menu a {
     clear: right;
     text-decoration: none;
     color: var(--dark);
     line-height: 70px;
+    letter-spacing: 1px;
 } 
 
 /* Change navbar link background color, color, and font-weight when hovered over - also works in hamburger view */
