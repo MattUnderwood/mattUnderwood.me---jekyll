@@ -335,6 +335,10 @@ label {
 }
 
 .blog {
+    ol, ul {
+    list-style: none;
+    padding: 0;
+}
     &__container {
         margin: 0 1rem;
         margin-top: 0;
@@ -456,6 +460,8 @@ label {
     }
 }
 
+
+
 .my-blog {
     max-width: 60%;
     @media  (max-width: 660px) {
@@ -548,8 +554,18 @@ label {
 }
 
 // Individual blog post CSS
+.blog-figure {
+    margin-bottom: 1rem;
+}
+
 .blog-image {
     width: 100%;
+}
+.blog-image-text {
+    text-align: center;
+    color: gray;
+    font-size: 1rem;
+    font-style: italic;
 }
 
 // Related posts section at the bottom of individual blog posts

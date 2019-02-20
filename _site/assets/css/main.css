@@ -12,7 +12,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
@@ -33,9 +33,6 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1; }
-
-ol, ul {
-  list-style: none; }
 
 blockquote, q {
   quotes: none; }
@@ -446,6 +443,9 @@ label {
   background-repeat: no-repeat;
   margin-bottom: 0; }
 
+.blog ol, .blog ul {
+  list-style: none;
+  padding: 0; }
 .blog__container {
   margin: 0 1rem;
   margin-top: 0; }
@@ -622,8 +622,17 @@ label {
   .single-post:last-child:after {
     content: none; }
 
+.blog-figure {
+  margin-bottom: 1rem; }
+
 .blog-image {
   width: 100%; }
+
+.blog-image-text {
+  text-align: center;
+  color: gray;
+  font-size: 1rem;
+  font-style: italic; }
 
 .related-posts {
   display: flex;
