@@ -9,6 +9,10 @@
 @import 'grid';
 @import 'modules';
 
+html {
+    scroll-behavior: smooth;
+}
+
 .header-background {
     background: url('https://res.cloudinary.com/dls40gzte/image/upload/v1523317884/mattUnderwood.me/header-image.jpg');
     background-repeat: no-repeat;
@@ -157,7 +161,7 @@
 }
 
 /* Hamburger Menu */
-label {
+.nav label {
     margin-right: 40px;
     font-size: 26px;
     line-height: 70px;
@@ -171,7 +175,7 @@ label {
 }
 
 @media only screen and (max-width: 815px) {
-    label {
+    .nav label {
         display: block;
         cursor: pointer;
         margin-right: 20px;
@@ -191,7 +195,7 @@ label {
         font-size: 20px;
         font-weight: 700;
         float: left;
-        margin-left: 2%;
+        margin-left: 3%;
         text-decoration: none;
         color: var(--dark);
         line-height: 70px;
@@ -245,7 +249,6 @@ label {
         width: 13rem;
         height: auto;
     }
-
 }
 
 .portfolio-piece {
@@ -371,6 +374,69 @@ label {
         width: 18rem;
         &:hover {color: white;}
     }
+}
+
+.hide {
+    display: none !important;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+// TEST CODE FOR FORM
+
+form div + div {
+  margin-top: 1rem;
+}
+
+label {
+  /* To make sure that all labels have the same size and are properly aligned */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+  @media (max-width: 522px) {
+      text-align: left;
+  }
+}
+
+input, textarea {
+  /* To make sure that all text fields have the same font settings */
+  font: 1em sans-serif;
+
+  /* To give the same size to all text fields */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* To harmonize the look & feel of text field border */
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  /* To give a little highlight on active elements */
+  border-color: #e97a4e;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+// END OF TEST CODE FOR FORM
+
+.alert {
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    background: #79c879;
+    color: #FFF;
+    margin-bottom: 10px;
+    display: none;
+    border: none;
+    font-family: $Lora;
 }
 
 .social {

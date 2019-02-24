@@ -1,4 +1,7 @@
 .button {
+    border: none;
+    font-size: 1.1rem;
+    font-family: $Lora;
     color: white;
     background: $link;
     box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16), 0px 3px 6px 0px rgba(0,0,0,0.23);
