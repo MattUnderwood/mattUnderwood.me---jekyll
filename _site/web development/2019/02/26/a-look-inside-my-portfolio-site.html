@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>A Look Inside My Portfolio Site</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="aDU88xYRDXtWlJFOvK9BYTBGMnKw-z0bKsoptKuIuys" />
+    <meta name="google-site-verification" content="Vd9hJHqBCAeeYE_9YrcUbwaVldSaY93XJIN2CFSmMcw" />
+
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="nav" id="navs">
+        <!-- Hamburger Menu -->
+        <a href="https://mattunderwood.me" id="mattUnderwood">Matt Underwood</a>
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle">
+        <!-- Navigation Options -->
+        <div class="menu" id="menu">
+            <a href="https://mattunderwood.me/#about">About</a>
+            <a href="https://mattunderwood.me/#portfolio">Portfolio</a>
+            <a href="https://mattunderwood.me/#blog">Blog</a>
+            <a href="https://mattunderwood.me/#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="wrapper"></div>
+
+    <div class="content"><div class="row center-me">
+    <div class="posted">
+        <div class="single-post">
+            <h2 class="blog-post-title decoration">A Look Inside My Portfolio Site</h2>
+                <span class="date">February 26, 2019</span>
+                <p>Web Development</p>
+                <h3>What Do I Want to Acheive?</h3>
+
+<p>The main goal of my portfolio site is to showcase my projects, share my contact information, and provide a place where I can write blog posts.</p>
+
+<p>I wanted to create a responsive site that was visually appealing and utilized the latest web development technologies. I browsed the portfolios of a few designers and gathered inspiration for my design before writing any code.</p>
+
+<h3>Achieving My Goals</h3>
+
+<p>The responsive layout of the site was achieved by using CSS Grid and CSS Flexbox. I wanted something that would look good at any viewport size and I created a lot of custom media queries to get everything just right.</p>
+
+<p>I used pictures from Unsplash.com to create a professional look for the site. These pictures are used throughout the entire site and can be seen in the header image, the portfolio images, the blog image, and inside each individual blog post.</p>
+
+<figure class="blog-figure">
+    <img class="blog-image" src="https://res.cloudinary.com/dls40gzte/image/upload/v1551207764/mattUnderwood.me/jonas-verstuyft-352716-unsplash.jpg" alt="A random image from Unsplash" />
+    <figcaption class="blog-image-text">A random image from Unsplash</figcaption>
+</figure>
+
+<p>I bought the domain name from NameCheap and currently host the portfolio site with a shared hosting plan from StableHost. I run all of this through GitHub Pages which supports Jekyll and allows for automatic updates when new code is pushed to my repository.</p>
+
+<p>Since I have shared hosting (that’s relatively slow) I host the pictures with the Cloudinary CDN. Hosting the images on an outside server improves load times and decreases the workload for the shared server that is hosting the site.</p>
+
+<h3>Adding Javascript</h3>
+
+<p>I use javascript throughout the site to provide an engaging user experience and make the site feel “alive”. I’ve explained a few of the places where javascript is utilized on the site below.</p>
+
+<ul>
+  <li>
+    <p>The navigation bar disappears as you scroll down and reappears at the top of the page as you scroll back up.</p>
+  </li>
+  <li>
+    <p>The navigation bar turns into a “hamburger menu” when the screen reaches a certain size. This makes the site much more readable at small screen sizes and saves space. A similar navigation bar is used in the Ubud Taxi Service site.</p>
+  </li>
+  <li>
+    <p>The “Contact Me” button at the bottom of the homepage triggers a toggle when it is clicked which hides the button and shows the contact form.</p>
+  </li>
+  <li>
+    <p>The contact form uses javascript to interact with a Firebase backend (used for storing form submissions). It also displays a confirmation message and hides the contact form upon successful form submission.</p>
+  </li>
+</ul>
+
+<h3>Implementing a Blog</h3>
+
+<p>During my first release, the portfolio site didn’t include a blog section but I recently upgraded the site and added a blog with Jekyll. Jekyll is a static site generator that was written in Ruby. After researching the different blog alternatives, I decided it was my best option since it is lightweight and strongly supported.</p>
+
+<p>The syntax and blog folder structure of Jekyll are a little different than what I’m used to, but the official documentation for was very clear and helpful.</p>
+
+<p>It took me a while to display the blog posts the way I wanted and it required a lot of CSS. I researched best practices for blog layouts and implemented many of the tips I discovered.</p>
+
+<p>I particularly like the “last post” and “next post” buttons at the bottom of the page that are dynamically generated based on the current blog post that is being viewed.</p>
+
+<figure class="blog-figure">
+    <img class="blog-image" src="https://res.cloudinary.com/dls40gzte/image/upload/v1551208299/mattUnderwood.me/css_code.jpg" alt="CSS code on computer screen" />
+    <figcaption class="blog-image-text">CSS code on computer screen</figcaption>
+</figure>
+
+<h3>Future Projects</h3>
+
+<p>At this point, I’m happy with my portfolio site and plan to focus on building advanced web applications for my portfolio.</p>
+
+<p>I’m currently working on implementing React into my “Weather App” project. I’ve worked through some tutorials on React but I haven’t created my own project with it yet. This seems like a relatively easy way to test it out and will build my confidence for more advanced projects.</p>
+
+<p>Once I complete the React Weather App I’m planning a full stack MERN (Mongo, Express, React, Node) application. This application will be an exercise tracker with a data visualization component to track overall progress. Although this isn’t the most unique idea, I’m going to build it from scratch and will create the specs based on my personal use case.</p>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Last and next post feature at the bottom of each individual blog post -->
+<div class="row center-me">
+    <div class="related-posts">
+        <section>
+            
+                <a class="previous-post decoration" href="/web%20development/2019/02/01/building-ubud-taxi-service.html">Last Post</a>
+                    <h4>Building Ubud Taxi Service</h4>
+                    <span class="post-date">February 01, 2019</span>
+            
+        </section>
+
+        <div class="vertical-divider"></div>
+            
+        <section>
+            
+        </section>
+    </div>
+</div>
+    
+    
+    
+</div>
+
+    <section id="contact" class="contact">
+        <h2 class="contact__title white center">Get in Touch</h2>
+        <div class="contact__social social">
+            <a href="https://github.com/MattUnderwood" class="social__button github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/matt-underwood/" class="social__button linkedin" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/matt_underwood4" class="social__button twitter"target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+        <button onclick="toggleForm()" class="button contact__button no-hover"  id="contact-button">Contact Me</button>
+        <div class="alert">Your message has been sent</div>
+
+        <form  class="form hide" id="contact-form">
+          <!-- action="mailto:mattu7@gmail.com" method="POST" -->
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+          <div>
+            <button class="button" type="submit">Submit your message</button>
+          </div>
+        </form>
+    </section>
+
+    <footer class="container">
+        <ul class="footer-list">
+            <li class="footer-list__item">© 2019 All Rights Reserved</li>
+            <li class="footer-list__item copy">Development by <a href="https://www.linkedin.com/in/matt-underwood/" class="developer">Matt Underwood</a></li>
+            <li class="footer-list__item">Photos from <a href="https://www.unsplash.com" target="_blank">Unsplash.com</a></li>
+        </ul>
+    </footer>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+    <!-- Javascript -->
+    <script type="text/javascript" src="/assets/js/main.js"></script>
+  </body>
+</html>
