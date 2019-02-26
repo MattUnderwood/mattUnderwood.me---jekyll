@@ -19,9 +19,9 @@ I used pictures from Unsplash.com to create a professional look for the site. Th
 
 {% include image.html url="https://res.cloudinary.com/dls40gzte/image/upload/v1551207764/mattUnderwood.me/jonas-verstuyft-352716-unsplash.jpg" description="A random image from Unsplash" %}
 
-I bought the domain name from NameCheap and currently host the portfolio site with a shared hosting plan from StableHost. I run all of this through GitHub Pages which supports Jekyll and allows for automatic updates when new code is pushed to my repository. 
+I bought the domain name from NameCheap and currently host the portfolio site with a shared hosting plan from StableHost. I run all of this through GitHub Pages which supports Jekyll and allows for automatic updates when new code is pushed to my GitHub repository. 
 
-Since I have shared hosting (that’s relatively slow) I host the pictures with the Cloudinary CDN. Hosting the images on an outside server improves load times and decreases the workload for the shared server that is hosting the site.
+Since I have shared hosting (that is relatively slow) I host the pictures with the Cloudinary CDN. Hosting the images on an outside server improves load times and decreases the workload for the shared server that is hosting the site.
 
 <h3>Adding Javascript</h3>
 
@@ -49,7 +49,7 @@ I particularly like the “last post” and “next post” buttons at the botto
 
 <h3>Future Projects</h3>
 
-At this point, I’m happy with my portfolio site and plan to focus on building advanced web applications for my portfolio. 
+At this point, I’m happy with my portfolio site and will focus on building advanced web applications for my portfolio. 
 
 I’m currently working on implementing React into my “Weather App” project. I’ve worked through some tutorials on React but I haven’t created my own project with it yet. This seems like a relatively easy way to test it out and will build my confidence for more advanced projects. 
 
