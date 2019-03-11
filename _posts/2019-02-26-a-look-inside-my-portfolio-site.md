@@ -2,7 +2,7 @@
 layout: post
 title: A Look Inside My Portfolio Site
 category: Web Development
-excerpt: As I continue to advance my web development skills I realized that I needed a place to showcase my work. This sparked the creation of my personal portfolio site. In this post I will share the thought process, technologies used, and the different versions of my portfolio site that have led to the current version. 
+excerpt: As I continued to advance my web development skills I realized that I needed a place to showcase my work. This sparked the creation of my personal portfolio site. In this post I will share the thought process, technologies used, and the different versions of my portfolio site that have led to the current version. 
 ---
 
 <h3>What Do I Want to Acheive?</h3>
