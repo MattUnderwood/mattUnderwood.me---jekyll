@@ -297,6 +297,14 @@ html {
     ), url(https://res.cloudinary.com/dls40gzte/image/upload/c_scale,q_40,w_800/v1523317885/mattUnderwood.me/weather_app.jpg);
 }
 
+.darken_zen {
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ), url(https://res.cloudinary.com/dls40gzte/image/upload/w_800,h_800,c_fill/v1552954234/mattUnderwood.me/the_zen_well.png);
+}
+
 .darken_wiki {
     background-image: 
     linear-gradient(
@@ -319,14 +327,6 @@ html {
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     ), url(https://res.cloudinary.com/dls40gzte/image/upload/c_scale,q_40,w_800/v1523317884/mattUnderwood.me/color_game.jpg);
-}
-
-.darken_todo {
-    background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ), url(https://res.cloudinary.com/dls40gzte/image/upload/c_scale,q_40,w_800/v1523317884/mattUnderwood.me/todo_list.jpg);
 }
 
 #blog {
