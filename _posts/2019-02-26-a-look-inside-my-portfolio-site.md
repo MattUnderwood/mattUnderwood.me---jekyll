@@ -37,9 +37,9 @@ I use javascript throughout the site to provide an engaging user experience and 
 
 <h3>Implementing a Blog</h3>
 
-During my first release, the portfolio site didn’t include a blog section but I recently upgraded the site and added a blog with Jekyll. Jekyll is a static site generator that was written in Ruby. After researching the different blog alternatives, I decided it was my best option since it is lightweight and strongly supported.
+During my first release, the portfolio site didn’t include a blog section but I recently upgraded the site and added a blog with Jekyll. Jekyll is a static site generator that was written in Ruby. After researching the different blog alternatives, I decided it was my best option since it is lightweight and widely supported.
 
-The syntax and blog folder structure of Jekyll are a little different than what I’m used to, but the official documentation for was very clear and helpful. 
+The syntax and blog folder structure of Jekyll are a little different than what I’m used to, but the official Jekyll documentation was very clear and helpful. 
 
 It took me a while to display the blog posts the way I wanted and it required a lot of CSS. I researched best practices for blog layouts and implemented many of the tips I discovered. 
 
